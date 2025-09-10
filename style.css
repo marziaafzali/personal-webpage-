@@ -1,0 +1,122 @@
+/* CSS Variables */
+:root {
+    --main-bg: linear-gradient(to right, #74ebd5, #9face6);
+    --font-main: 'Roboto', Arial, sans-serif;
+    --text-color: #333;
+    --highlight: #0056b3;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background: var(--main-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 0 10%;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p, li {
+    font-size: 1em;
+}
+
+.profile-img {
+    display: block;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin: 0 auto;
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ol li:nth-child(odd) {
+    color: var(--highlight);
+}
+
+.fun-fact {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+a {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table, th, td {
+    border: 1px solid #444;
+    text-align: center;
+    padding: 8px;
+}
+
+form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+input, textarea, button {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: var(--font-main);
+}
+
+button {
+    background: var(--highlight);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background: darkblue;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 0 5%;
+    }
+    iframe {
+        width: 100%;
+    }
+}
